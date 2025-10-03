@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+.list-group-item.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.card {
+    text-align: center;
+}
+
+.guard-item, .shift-item, .incident-item, .leave-item {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.guard-item:hover, .shift-item:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.badge {
+    font-size: 0.8em;
+}
+
+.language-selector {
+    width: 150px;
+}
+
+/* استایل برای بخش‌های مختلف */
+#guards { display: block; }
+#shifts, #incidents, #leaves, #reports { display: none; }
+
+/* استایل برای عکس پروفایل */
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0d6efd;
+}
+
+.guard-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #dee2e6;
+}
+
+/* استایل برای چاپ */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    .modal {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 15px;
+        visibility: visible;
+    }
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+/* استایل برای دکمه‌ها */
+.btn {
+    margin: 2px;
+}
+
+.shift-badge {
+    font-size: 0.9em;
+    padding: 6px 12px;
+}
+
+.day-shift {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.night-shift {
+    background-color: #343a40;
+    color: #fff;
+}
